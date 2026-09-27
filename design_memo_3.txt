@@ -1,0 +1,17 @@
+Stacks are best for undo/redo because, when you tell the program to undo the 
+last action, it needs to treat that action as the most recent one. 
+Then those actions go into the undo stack; once an action is undone, 
+it goes into the redo stack so you can redo it with the redo command. 
+A queue is better for a help desk for the same reason it is useful in the 
+real world: it keeps things organized and straightforward. 
+One person needs help, so they enter the queue; then the next, and the next, 
+and so on. Then, when you handle the first person in line, it removes that 
+person once helped, moves the second person up, and repeats. 
+My implementation of linked-list stacks and queues, at least in my opinion, 
+once I got the hang of it, they were easier to navigate and use. 
+Instead of having to tell a program to be flexible and aware of what could 
+potentially be in a list at certain indexes, you can instead say Here is a 
+list of objects that all share XYZ. You are looking for objects that match 
+X but only have Z. Start at the beginning, then go through the whole linked 
+list and put everything that matches into this queue so that I can sort through 
+those myself.
